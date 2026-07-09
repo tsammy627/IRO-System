@@ -22,5 +22,5 @@ The IRO system is a web-based application that allows students and indigenes to 
 - JavaScript
 
 ## 👨‍🎓 Author
-Your Name  osofodunrin tobi 220404108
+Your Name  OSOFODUNRIN TOBI 220404108
 CSC426 Project
