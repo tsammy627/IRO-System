@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Issues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>IRO</h2>
+</header>
+
+<div class="issues-container" id="issuesList"></div>
+
+<script>
+let issues = JSON.parse(localStorage.getItem("issues")) || [];
+let container = document.getElementById("issuesList");
+
+issues.forEach(issue => {
+    let card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+        <h3>${issue.type}</h3>
+        <p>${issue.description}</p>
+        <small>${issue.location} - ${issue.category}</small>
+    `;
+
+    container.appendChild(card);
+});
+</script>
+
+</body>
+</html>
